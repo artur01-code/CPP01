@@ -1,6 +1,7 @@
 NAME	= Weapon
 SRCS	= main.cpp \
-		Weapon.cpp 
+		Weapon.cpp \
+		HumanA.cpp
 
 CC		= c++
 FLAGS	= -Wall -Wextra -Werror -std=c++98

@@ -1,18 +1,18 @@
-#ifndef _HUMANA_HPP_
-#define _HUMANA_HPP_
+#ifndef _HUMANB_HPP_
+#define _HUMANB_HPP_
 #include "Weapon.hpp"
 
-class HumanA
+class HumanB
 {
 	//Constructor
 	public:
-	HumanA(std::string name, Weapon &type);
-	~HumanA(void);
+	HumanB(std::string name);
+	~HumanB(void);
 
 	//attributes
 	private:
 	std::string _name;
-	Weapon &_WeaponA;
+	Weapon &_WeaponB;
 
 	//methods
 	public:
