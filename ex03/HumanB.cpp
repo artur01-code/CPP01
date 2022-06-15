@@ -2,7 +2,7 @@
 
 HumanB::HumanB(std::string name) :
 	_name(name),
-	_WeaponA(type)
+	_WeaponB(NULL)
 {}
 
 HumanB::~HumanB(void)
@@ -12,5 +12,8 @@ HumanB::~HumanB(void)
 
 void HumanB::attack(void)
 {
-	std::cout << get_name() << " attacks with their " << this->_WeaponA.get_type() << std::endl;
+	if (this->_WeaponB)
+		std::cout << get_name() << " attacks with their " << this->_WeaponB->get_type() << std::endl;
+	else
+		std::cout << "Would be better if you start running" << std::endl;
 };

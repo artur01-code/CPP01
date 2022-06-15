@@ -12,12 +12,13 @@ class HumanB
 	//attributes
 	private:
 	std::string _name;
-	Weapon &_WeaponB;
+	Weapon *_WeaponB;
 
 	//methods
 	public:
 	std::string get_name() {return (_name);}
 	bool set_name(std::string new_name) {_name = new_name; return (true);}
+	bool set_Weapon(Weapon &type) {_WeaponB = &type; return (true);}
 	void attack(void);
 };
 
