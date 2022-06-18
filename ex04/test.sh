@@ -1,3 +1,3 @@
 clear
 make re
-./sed file.txt is PENIS
+./sed file.txt is REPLACED
