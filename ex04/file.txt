@@ -1,0 +1,3 @@
+this is a sample file which will the programm will read
+and afterwards it is suppost to replace every string, which is
+given in s1, got replaced by the string s2.
