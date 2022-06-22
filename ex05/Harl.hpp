@@ -2,11 +2,13 @@
 # define _HARL_HPP_
 
 #include <iostream>
+#include <string>
 
 class Harl
 {
 	//Constructor
 	public:
+		typedef void (Harl::*getFunc)(void);
 		Harl();
 		~Harl();
 
@@ -23,4 +25,4 @@ class Harl
 		void complain(std::string level);
 };
 
-#endif;
+#endif
