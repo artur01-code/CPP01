@@ -5,7 +5,7 @@ int main()
 {
 
 	std::cout << "\033[90m\n-----------------------------------\n\033[90m [DESTRUCTOR] \033[33m[ACTIONS] \033[32m[NAMES]\033[90m\n-----------------------------------\n\033[0m" << std::endl;
-
+	std::cout << std::endl << "\033[33m******************TEST 1*****************" << std::endl << std::endl; 
 	{
 	Weapon club = Weapon("crude spiked club");
 	std::cout << "\033[33mWeapon got created\033[0m" << std::endl;
@@ -15,6 +15,7 @@ int main()
 	club.set_type("some other type of club");
 	std::cout << "\033[33mWeapon type got changed\033[0m" << std::endl;
 	bob.attack();
+	std::cout << "\033[33mHumanA attacked\033[0m" << std::endl;
 	}
 	std::cout << std::endl << "\033[33m******************TEST 2*****************" << std::endl << std::endl; 
 	{
@@ -28,5 +29,6 @@ int main()
 	if (club.set_type("some other type of club"))
 		std::cout << "\033[33mWeapon type got changed\033[0m" << std::endl;
 	jim.attack();
+	std::cout << "\033[33mHumanB attacked\033[0m" << std::endl;
 	}
 }
