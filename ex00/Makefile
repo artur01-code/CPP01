@@ -1,6 +1,8 @@
 NAME	= Zombie
 SRCS	= main.cpp \
 		Zombie.cpp \
+		newZombie.cpp \
+		randomChump.cpp \
 
 
 CC		= c++

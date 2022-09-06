@@ -10,12 +10,12 @@ int main()
 	std::cout << "\033[33m Object got named" << Peter.get_name() << std::endl;
 	Peter.announce();
 
-	Zombie *Steve = Peter.newZombie("Steve");
+	Zombie *Steve = newZombie("Steve");
 	std::cout << "\033[33m Object got created" << std::endl;
 	Steve->announce();
 	delete Steve;
 	std::cout << "\033[33m Object got deleted" << std::endl;
 
-	Peter.randomChump("Alex");
+	randomChump("Alex");
 	std::cout << "\033[33m Object got created, named and announced" << std::endl;
 }

@@ -16,6 +16,7 @@ class Zombie {
 	std::string get_name() {return (_name);}
 	bool set_name(std::string new_name) {_name = new_name; return (true);}
 	void announce (void);
+};
+
 	Zombie *newZombie(std::string name);
 	void randomChump(std::string name);
-};
